@@ -13,6 +13,13 @@ body {
   background-color: rgb(20, 20, 20);
 }
 
+p,
+ol {
+  color: white;
+}
+
+/*HEADER*/
+
 header {
   height: 100px;
   background-color: rgb(20, 20, 20);
@@ -22,38 +29,92 @@ header {
 #logo {
   position: absolute;
   left: 50px;
-  top: 10px;
+  top: 12px;
   color: white;
   font-size: 69px;
   font-family: "Spacemission";
+  text-decoration: none;
 }
 
 .search {
   position: absolute;
-  top: 3.2%;
+  top: 2.5%;
   left: 250px;
   height: 50px;
-  width: 800px;
-  border: 3px solid rgb(69, 69, 69);
+  width: 1050px;
+  border: 1px solid rgb(20, 20, 20);
   border-radius: 25px 25px;
   font-family: "Squada One", cursive;
   font-size: 20px;
+  background-color: rgb(63, 63, 63);
+  color: white;
 }
 
-.hamburger {
+#login {
+  right: 450px;
+}
+
+#contact {
+  font-size: 20px;
+  right: 250px;
+  top: 4%;
+  font-family: "Squada One", cursive;
+}
+
+.header-item {
   color: white;
   font-size: 40px;
   position: absolute;
-  top: 3.5%;
+  top: 3%;
   right: 80px;
-  background-color: rgb(20, 20, 20);
   padding: 0;
   border-style: none;
+  text-decoration: none;
 }
 
-.hamburger:hover {
-  color: rgb(109, 109, 109);
+.header-item:hover {
+  color: rgb(198, 198, 198);
 }
+
+/*HEADER*/
+/*HAMBURGER*/
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li .content:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+.ham-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  right: 75px;
+  top: 75px;
+  border-radius: 5px 5px;
+  font-family: "Squada One", cursive;
+}
+
+.ham-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 5px 5px;
+}
+
+.dropdown:hover .ham-content {
+  display: block;
+}
+
+/*HAMBURGER*/
 
 .welcome-div {
   border: 3px solid rgb(255, 255, 255);
