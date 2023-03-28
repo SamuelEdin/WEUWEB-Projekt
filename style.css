@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+
+@font-face {
+  font-family: Spacemission;
+  src: url(SpaceMission-rgyw9.otf);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+}
+
+header {
+  height: 100px;
+  background-color: rgb(20, 20, 20);
+  border: 1px solid white;
+}
+
+#logo {
+  position: absolute;
+  left: 50px;
+  top: 10px;
+  color: white;
+  font-size: 69px;
+  font-family: "Spacemission";
+}
+
+.search {
+  position: absolute;
+  top: 3.2%;
+  left: 250px;
+  height: 50px;
+  width: 800px;
+  border: 3px solid rgb(69, 69, 69);
+  border-radius: 25px 25px;
+  font-family: "Squada One", cursive;
+  font-size: 20px;
+}
+
+.hamburger {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 3.5%;
+  right: 80px;
+  background-color: rgb(20, 20, 20);
+  padding: 0;
+  border-style: none;
+}
+
+.hamburger:hover {
+  color: rgb(109, 109, 109);
+}
+
+.welcome-div {
+  border: 3px solid rgb(255, 255, 255);
+  width: 50%;
+  height: 100px;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.welcome {
+  height: 50%;
+  width: fit-content;
+  font-family: "Squada One", cursive;
+  font-size: 50px;
+  margin-left: 45px;
+}
+
+#quote {
+  font-size: 30px;
+  margin-top: 5px;
+}
