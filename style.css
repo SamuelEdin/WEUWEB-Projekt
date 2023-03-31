@@ -19,29 +19,27 @@ ol {
 }
 
 /*HEADER*/
-
 header {
   height: 100px;
   background-color: rgb(20, 20, 20);
-  border: 1px solid white;
+  border: 3px solid white;
+  margin: 0.5% 0.5% 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #logo {
-  position: absolute;
-  left: 50px;
-  top: 12px;
   color: white;
   font-size: 69px;
   font-family: "Spacemission";
   text-decoration: none;
+  margin-left: 1%;
 }
 
 .search {
-  position: absolute;
-  top: 2.5%;
-  left: 250px;
   height: 50px;
-  width: 1050px;
+  width: 50%;
   border: 1px solid rgb(20, 20, 20);
   border-radius: 25px 25px;
   font-family: "Squada One", cursive;
@@ -50,23 +48,14 @@ header {
   color: white;
 }
 
-#login {
-  right: 450px;
-}
-
 #contact {
   font-size: 20px;
-  right: 250px;
-  top: 4%;
   font-family: "Squada One", cursive;
 }
 
 .header-item {
   color: white;
   font-size: 40px;
-  position: absolute;
-  top: 3%;
-  right: 80px;
   padding: 0;
   border-style: none;
   text-decoration: none;
@@ -75,10 +64,9 @@ header {
 .header-item:hover {
   color: rgb(198, 198, 198);
 }
-
 /*HEADER*/
-/*HAMBURGER*/
 
+/*HAMBURGER*/
 li a {
   display: inline-block;
   color: white;
@@ -97,7 +85,7 @@ li .content:hover {
   background-color: #f9f9f9;
   min-width: 160px;
   right: 75px;
-  top: 75px;
+  top: 8.5%;
   border-radius: 5px 5px;
   font-family: "Squada One", cursive;
 }
@@ -113,15 +101,29 @@ li .content:hover {
 .dropdown:hover .ham-content {
   display: block;
 }
-
 /*HAMBURGER*/
 
-.welcome-div {
+/*BODY-MAIN*/
+.top-section {
+  display: flex;
+}
+
+#top-ad {
+  margin-right: 0.5%;
+  margin-left: 0.25%;
+}
+
+#top-left {
+  margin-left: 0.5%;
+  margin-right: 0.25%;
+}
+
+.top-div {
   border: 3px solid rgb(255, 255, 255);
-  width: 50%;
+  width: 49%;
   height: 100px;
   color: rgb(255, 255, 255);
-  margin-top: 10px;
+  margin-top: 0.5%;
 }
 
 .welcome {
@@ -135,4 +137,37 @@ li .content:hover {
 #quote {
   font-size: 30px;
   margin-top: 5px;
+}
+
+.mid-section {
+  display: flex;
+}
+
+.games {
+  border: 3px solid rgb(255, 255, 255);
+  width: 79%;
+  height: 74.5vh;
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+  margin-right: 0.25%;
+}
+
+#right-ad {
+  border: 3px solid rgb(255, 255, 255);
+  width: 19%;
+  height: 60vh;
+  margin-top: 0.5%;
+  margin-right: 0.5%;
+  margin-left: 0.25%;
+}
+/*BODY-MAIN*/
+
+/*LOGIN*/
+#login-form {
+  border: 3px solid white;
+  height: 500px;
+  width: 30%;
+  position: absolute;
+  left: 35%;
+  top: 15%;
 }
