@@ -200,7 +200,7 @@ li .content:hover {
   border: 3px solid white;
   border-radius: 4% 4%;
   width: 20%;
-  height: 250px;
+  height: 12.5%;
   font-family: "Squada One", cursive;
   font-size: 15px;
   color: white;
@@ -209,6 +209,9 @@ li .content:hover {
   justify-content: space-between;
   align-items: center;
   padding: 7px;
+}
+
+.game:hover {
 }
 
 .game_img {
@@ -222,11 +225,26 @@ li .content:hover {
   margin-top: 15px;
 }
 
-.amog {
-  background-color: green;
-  width: 100%;
+.cocker {
   display: flex;
+  width: 100%;
+  height: fit-content;
+  place-items: center;
   justify-content: space-between;
+  padding: 4px;
+}
+
+.stores {
+  border: 2px solid blue;
+  height: fit-content;
+}
+
+.metascore {
+  padding: 2px;
+  border: 2px solid green;
+  border-radius: 4px 4px;
+  margin-left: 5px;
+  height: fit-content;
 }
 /*BODY-MAIN*/
 

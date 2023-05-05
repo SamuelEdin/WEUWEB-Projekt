@@ -6,13 +6,17 @@ function search(){
   fetch(`https://rawg.io/api/games?token&key=${apiKey}&search=${gameSearch.value}&page_size=32`)
   .then(res => res.json())
   .then(data => { for (let index = 0; index < 32; index++) {
-    games.innerHTML += `<div class="game">
-  <div class="amog">  
-    <p class="metascore">${data.results[index].metacritic}</p>  
-  </div>  
-  <img src="${data.results[index].background_image}" alt="${data.results[index].name}" class="game_img">
-  <p class="game_p">${data.results[index].name}</p>
-</div>`
+        games.innerHTML += `<div class="game">
+    <div class="cocker">
+        <div class="stores">😐</div>
+        <div class="metascore">  
+            ${data.results[index].metacritic}
+        </div> 
+    </div> 
+    <img src="${data.results[index].background_image}" alt="${data.results[index].name}" class="game_img">
+    <p class="game_p">${data.results[index].name}</p>
+    </div>`
+
   
 }console.log(data)})
   .catch(error => console.error('Error:', error));
