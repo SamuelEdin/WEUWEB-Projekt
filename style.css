@@ -31,7 +31,7 @@ header {
 
 #logo {
   color: white;
-  font-size: 69px;
+  font-size: 430%;
   font-family: "Spacemission";
   text-decoration: none;
   margin-left: 1%;
@@ -124,6 +124,11 @@ li .content:hover {
   margin-left: 0.25%;
 }
 
+#record_ad {
+  height: 100px;
+  width: 100%;
+}
+
 #top-left {
   margin-left: 0.5%;
   margin-right: 0.25%;
@@ -172,6 +177,7 @@ li .content:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 #trending_games {
@@ -195,23 +201,28 @@ li .content:hover {
   justify-content: space-evenly;
 }
 
-.game {
+#game {
   margin: 20px;
   border: 3px solid white;
   border-radius: 4% 4%;
   width: 20%;
-  height: 12.5%;
+  max-height: 12.5%;
   font-family: "Squada One", cursive;
   font-size: 15px;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between center;
   align-items: center;
+  text-align: center;
   padding: 7px;
+  flex-basis: calc(23% - 40px);
+  transition: transform 0.1s ease-in-out;
 }
 
-.game:hover {
+#game:hover {
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 .game_img {
@@ -222,21 +233,22 @@ li .content:hover {
 
 .game_p {
   font-size: 30px;
-  margin-top: 15px;
+  margin-top: 8%;
 }
 
-.cocker {
+#game-top-info {
   display: flex;
   width: 100%;
   height: fit-content;
   place-items: center;
   justify-content: space-between;
   padding: 4px;
+  padding-top: 1px;
 }
 
-.stores {
-  border: 2px solid blue;
+#date {
   height: fit-content;
+  padding: 2px;
 }
 
 .metascore {
@@ -245,6 +257,23 @@ li .content:hover {
   border-radius: 4px 4px;
   margin-left: 5px;
   height: fit-content;
+}
+.metascore.green {
+  border: 2px solid green;
+}
+
+.metascore.yellow {
+  border: 2px solid yellow;
+}
+
+.metascore.red {
+  border: 2px solid red;
+}
+
+.metascore.white {
+  border: 2px solid white;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 /*BODY-MAIN*/
 
@@ -304,3 +333,98 @@ label {
   font-size: 30px;
 }
 /*LOGIN*/
+
+@media screen and (max-width: 391px) {
+  header {
+    border-style: none;
+  }
+
+  #logo {
+    font-size: 250%;
+    margin-left: 4%;
+  }
+
+  .hideThis {
+    display: none;
+  }
+
+  .dropdown {
+    margin-right: 4%;
+  }
+
+  #gameSearch {
+    margin-left: 3%;
+  }
+
+  #TopSection {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #top-ad,
+  #right-ad {
+    width: 390px;
+    height: 100px;
+    margin: 0;
+    margin-top: 0.25%;
+  }
+
+  #right-ad {
+    margin-top: 2%;
+  }
+
+  #top-left {
+    margin: 0;
+    width: 390px;
+    height: 100px;
+  }
+
+  .welcome {
+    font-size: 200%;
+    margin-left: 5%;
+  }
+
+  #quote {
+    font-size: 150%;
+    margin-top: 5%;
+  }
+
+  #MidSection {
+    flex-direction: column;
+  }
+
+  #game-section {
+    width: 390px;
+    border-style: none;
+  }
+
+  #trending_games {
+    font-size: 245%;
+    margin-top: 4%;
+  }
+
+  #games {
+    flex-direction: column;
+    margin-right: 5%;
+  }
+
+  #game {
+    width: 90%;
+    min-height: 300px;
+    margin-bottom: 0;
+  }
+
+  .game_p {
+    font-size: 250%;
+  }
+
+  .game_img {
+    margin-top: 5%;
+  }
+
+  .metascore,
+  #date {
+    font-size: 200%;
+    margin-top: 1%;
+  }
+}
