@@ -39,7 +39,7 @@ header {
 
 .search {
   height: 50px;
-  width: 50%;
+  width: 60%;
   border: 1px solid rgb(20, 20, 20);
   border-radius: 25px 25px;
   font-family: "Squada One", cursive;
@@ -48,16 +48,6 @@ header {
   color: white;
   padding-left: 10px;
 }
-
-/* #SearchDiv {
-  width: 50%;
-  height: 500px;
-  background-color: red;
-  position: absolute;
-  left: 18.5%;
-  top: 12%;
-  display: none;
-} */
 
 #contact {
   font-size: 20px;
