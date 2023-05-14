@@ -429,4 +429,20 @@ label {
     padding-left: 3%;
     padding-right: 3%;
   }
+
+  #login-form {
+    width: 100%;
+    height: 50%;
+    left: 0;
+    top: 15%;
+    padding-top: 20%;
+  }
+
+  #qr {
+    margin-top: 22%;
+  }
+
+  .form-button {
+    top: 20%;
+  }
 }

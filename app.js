@@ -2,10 +2,7 @@ let gameSearch = document.getElementById("gameSearch")
 const games = document.getElementById("games")
 const apiKey = "06d394ad6a8a4d5d9a70df22a3801804";
 
-// let showGame = getElementById("game")
-// showGame.addEventListener("click", function (event) {
-//   console.log("balls")
-// })
+const bog = document.getElementById("game")
 
 function search(){
   fetch(`https://rawg.io/api/games?token&key=${apiKey}&search=${gameSearch.value}&page_size=32`)
@@ -36,14 +33,12 @@ function search(){
     </div> 
     <img src="${data.results[index].background_image}" alt="${data.results[index].name}" class="game_img">
     <p class="game_p">${data.results[index].name}</p>
-    </div>`
+    </div>` 
 }
-
 console.log(data)})
   .catch(error => console.error('Error:', error));
-
-
 }
+
 //Gör att top section försvinner när 'enter' trycks.
 function hideTopSection() {
     var x = document.getElementById('TopSection');
