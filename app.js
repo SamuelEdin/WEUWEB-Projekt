@@ -33,6 +33,10 @@ function search(){
     </div> 
     <img src="${data.results[index].background_image}" alt="${data.results[index].name}" class="game_img">
     <p class="game_p">${data.results[index].name}</p>
+    <div id="button_div">
+      <a href="thankyou.html" target="_blank" class="download_btn">Direct Download (.zip)</a>
+      <a href="BB.html" target="_blank" class="download_btn">BB Download Manager</a>
+      </div>
     </div>` 
 }
 console.log(data)})
