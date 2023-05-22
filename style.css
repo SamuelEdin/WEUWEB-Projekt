@@ -196,7 +196,7 @@ li .content:hover {
   justify-content: space-evenly;
 }
 
-#game {
+.game {
   margin: 20px;
   border: 3px solid white;
   border-radius: 4% 4%;
@@ -215,7 +215,7 @@ li .content:hover {
   transition: transform 0.1s ease-in-out;
 }
 
-#game:hover {
+.game:hover {
   transform: scale(1.1);
   z-index: 1;
 }
@@ -231,7 +231,7 @@ li .content:hover {
   margin-top: 8%;
 }
 
-#game-top-info {
+.game-top-info {
   display: flex;
   width: 100%;
   height: fit-content;
@@ -241,7 +241,7 @@ li .content:hover {
   padding-top: 1px;
 }
 
-#date {
+.date {
   height: fit-content;
   padding: 2px;
 }
@@ -269,6 +269,18 @@ li .content:hover {
   border: 2px solid white;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+#gameInfo {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -450px;
+  width: 900px;
+  height: 500px;
+  background-color: red;
 }
 
 #button_div {
@@ -409,7 +421,7 @@ label {
     margin-left: 4%;
   }
 
-  .hideThis {
+  .hide_this {
     display: none;
   }
 
@@ -472,7 +484,7 @@ label {
     flex-direction: column;
   }
 
-  #game {
+  .game {
     width: 90%;
     min-height: 300px;
     margin-bottom: 0;
@@ -490,13 +502,13 @@ label {
   }
 
   .metascore,
-  #date {
+  .date {
     font-size: 200%;
     margin-top: 2%;
     margin-right: 2%;
   }
 
-  #date {
+  .date {
     margin-left: 2%;
   }
 

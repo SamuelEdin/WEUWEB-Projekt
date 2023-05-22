@@ -2,8 +2,6 @@ let gameSearch = document.getElementById("gameSearch")
 const games = document.getElementById("games")
 const apiKey = "06d394ad6a8a4d5d9a70df22a3801804";
 
-const bog = document.getElementById("game")
-
 function search(){
   fetch(`https://rawg.io/api/games?token&key=${apiKey}&search=${gameSearch.value}&page_size=32`)
   .then(res => res.json())
@@ -22,9 +20,9 @@ function search(){
       colorClass = 'red';
     } 
     
-        games.innerHTML += `<div id="game">
-    <div id="game-top-info">
-        <div id="date">
+        games.innerHTML += `<div class="game" class="dick">
+    <div class="game-top-info">
+        <div class="date">
           ${data.results[index].released}
         </div>
         <div class="metascore ${colorClass}">  
@@ -41,6 +39,20 @@ function search(){
 }
 console.log(data)})
   .catch(error => console.error('Error:', error));
+
+  // console.log(games.innerHTML)
+  // let cock = document.getElementsByClassName('.dick');
+  // let gameInfo = document.getElementById("gameInfo");
+  // console.log(cock)
+  // cock.forEach((game) => {
+  //   console.log(game)
+  //   game.style.backgroundColor = "red"
+  //   game.addEventListener('click', (event) => {
+  //     gameInfo.style.display = 'block';
+  //     console.log("balls")
+  //   });
+  // });
+
 }
 
 //Gör att top section försvinner när 'enter' trycks.
@@ -76,3 +88,4 @@ function hideInnerHTML() {
 window.addEventListener("load", (event) => {
     search()
 })
+
